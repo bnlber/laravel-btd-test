@@ -37,6 +37,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           push: true
+          sbom: true
           context: ${{ matrix.php }}
           platforms: linux/amd64
           tags: |

@@ -10,7 +10,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
 RUN apt-get -y --no-install-recommends install \
     curl \
     git \
-    mysql-client \
+    mariadb-client-compat \
     nodejs
 
 # Install php extensions

@@ -8,10 +8,11 @@ RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
 
 # Install dependencies
 RUN apt-get -y --no-install-recommends install \
-    curl \
     git \
     mariadb-client-compat \
     nodejs
+
+RUN curl --version
 
 # Install php extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && \

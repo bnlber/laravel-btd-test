@@ -12,8 +12,6 @@ RUN apt-get -y --no-install-recommends install \
     mariadb-client-compat \
     nodejs
 
-RUN curl --version
-
 # Install php extensions
 RUN chmod +x /usr/local/bin/install-php-extensions && \
     install-php-extensions \
